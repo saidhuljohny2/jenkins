@@ -12,7 +12,7 @@ chrome_options.binary_location = '/usr/bin/google-chrome'
 url="http://"+sys.argv[1]+":82/devopsIQ/";
 print("Testing Website: "+url)
 
-service = Service(executable_path="/usr/local/bin/chromedriver")
+service = Service(executable_path="/usr/bin/chromedriver")
 driver = webdriver.Chrome(service=service, options=chrome_options) 
 
 driver.get(url);
